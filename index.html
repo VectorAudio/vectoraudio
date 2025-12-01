@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vector Audio™ — Model-Based Audio Standard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Vector Audio™ is a next-generation, model-based audio standard for dynamic rendering, adaptive playback, and expressive performance encoding." />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0b0c10;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header {
+      padding: 3rem 1.5rem 2rem;
+      text-align: center;
+      background: radial-gradient(circle at top, #1f2833 0, #0b0c10 55%);
+    }
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: 0.05em;
+    }
+    header p {
+      margin: 0.25rem 0;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.85;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      border-bottom: 1px solid #2b2f3a;
+      padding-bottom: 0.4rem;
+    }
+    a {
+      color: #66fcf1;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .card {
+      border: 1px solid #2b2f3a;
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1rem;
+      background: #151820;
+    }
+    .tagline {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      opacity: 0.85;
+    }
+    footer {
+      border-top: 1px solid #2b2f3a;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      text-align: center;
+      opacity: 0.75;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="tagline">Next-Generation Audio Format</div>
+    <h1>Vector Audio™</h1>
+    <p>
+      A model-based audio standard for dynamic rendering, adaptive playback, and expressive performance encoding — designed to move beyond static waveform formats.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>What is Vector Audio?</h2>
+      <p>
+        Vector Audio™ is a proposed digital audio framework that represents music as <strong>performance data</strong>, <strong>instrument and vocal models</strong>, and <strong>scene descriptions</strong> rather than fixed PCM samples.
+        At playback time, a render engine synthesizes the final audio in real time, allowing content to improve as models, devices, and listening environments evolve.
+      </p>
+      <p>
+        Instead of a single frozen “recording,” Vector Audio describes <em>how</em> a performance is played and <em>how</em> it should sound, making it possible to adapt to new devices, rooms, and creative contexts without re-recording or remastering.
+      </p>
+    </section>
+
+    <section>
+      <h2>Specification</h2>
+      <div class="card">
+        <p><strong>Vector Audio Specification (VASP) v0.1 — Draft</strong></p>
+        <p>
+          The initial version of the Vector Audio Specification is currently in development and is being shared publicly for discussion and feedback.
+        </p>
+        <p>
+          <a href="docs/vasp-spec-0.1.md">Read VASP v0.1 (Draft)</a>
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Goals</h2>
+      <ul>
+        <li>Define a model-based audio format that is <strong>resolution-independent</strong> and <strong>future-proof</strong>.</li>
+        <li>Preserve <strong>performance expressivity</strong> at a deeper level than MIDI or traditional project files.</li>
+        <li>Support <strong>adaptive playback</strong> based on device, room, and listener preferences.</li>
+        <li>Enable <strong>upgradeable masters</strong> as models and render engines improve over time.</li>
+        <li>Provide a structured path for <strong>human–AI collaboration</strong> in music creation and playback.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Participate</h2>
+      <p>
+        Vector Audio™ is intended to be an open, collaborative effort involving audio developers, researchers, musicians, producers, hardware makers, and streaming platforms.
+      </p>
+      <p>
+        If you are interested in contributing, evaluating, or integrating Vector Audio, please reach out:
+      </p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:info@vectoraudio.net">info@vectoraudio.net</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div>Vector Audio™ is a pending trademark in the United States.</div>
+    <div>&copy; <span id="year"></span> Vector Audio Initiative. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
