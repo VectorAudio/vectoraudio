@@ -79,7 +79,7 @@ Extensions, rendering algorithms, and ML model architectures are non-normative i
 - **Vector Audio™** — The proposed model-based audio standard.  
 - **Performance (VAP)** — Expressive musical control data describing *how* music is played.  
 - **Model (VAM)** — Mathematical/ML/physical representation of an instrument or voice.  
-- **Dynamic Model Pack (VADiyorum)** — Collections of supplemental models or micro-models.  
+- **Dynamic Model Pack (VAD - Vector Audio™ Dynamic Model Pack)** — Collections of supplemental models or micro-models.  
 - **Renderer (VARE)** — Software/hardware capable of rendering Vector Audio™ content.  
 - **Scene Graph** — Spatial arrangement of sound sources and acoustic attributes.  
 - **Normative** — Mandatory for compliance.  
